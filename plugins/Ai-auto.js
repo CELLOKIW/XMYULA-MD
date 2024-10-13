@@ -28,8 +28,8 @@ handler.before = async (m, { conn }) => {
      * @note Usahakan memberikan logika yang masuk akal dan mudah dipahami!
      */
     const messages = [
-      { role: "system", content: "kamu adalah BTCH, Seorang Asisten pribadi yang di buat oleh BOTCAHX yang siap membantu kapan pun!" },
-      { role: "assistant", content: `Saya BTCH, asisten pribadi yang siap membantu kamu kapan pun! Apa yang bisa saya bantu hari ini?` },
+      { role: "system", content: "kamu adalah kimie, Seorang Asisten pribadi yang di buat oleh Pendosa yang siap membantu kapan pun!" },
+      { role: "assistant", content: `Saya Kimie, asisten pribadi yang siap membantu kamu kapan pun! Apa yang bisa saya bantu hari ini?` },
       ...previousMessages.map((msg, i) => ({ role: i % 2 === 0 ? 'user' : 'assistant', content: msg })),
       { role: "user", content: m.text }
     ];
