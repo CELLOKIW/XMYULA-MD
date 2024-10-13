@@ -4,15 +4,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    let maximus = `
 -= *GROUP BOT WHATSAPP* =-
 
-https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s`
+`
 		await conn.sendMessage(m.chat, {
                 text: maximus,
                 contextInfo: {
                     externalAdReply: {
-                        title: "YuLa | Online Bot",
-                        body: "",
+                        title: "kimie -Bot | Online Bot",
+                        body: "powered by pendosa",
                         thumbnailUrl: "https://telegra.ph/file/7a20200e053f8906d375f.jpg",
-                        sourceUrl: "https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s",
+                        sourceUrl: "https://chat.whatsapp.com/",
                         mediaType: 1,
                         showAdAttribution: true,
                         renderLargerThumbnail: true
