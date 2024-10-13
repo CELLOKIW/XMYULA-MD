@@ -6,7 +6,7 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
     let pesan = `\n> *1.* 30 Day join the group\n> *2.* 3 Day Premium\n> *3.* 30 Day Premium\n\nSilahkan pilih produk kami dengan mengeklik tombol dibawah ini`
     const sections = [
 				[
-					'— YULA JOIN GROUP', [
+					'— KIMIE SEWA GROUP', [
 						['Harga: Rp. 7.000 IDR', '.sewa G7', '7 Day join the group'],
 						['Harga: Rp. 15.000 IDR', '.sewa G30', '30 Day join the group'],
 						['Harga: Rp. 30.000 IDR', '.sewa G60', '60 Day join the group']
@@ -48,7 +48,7 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
       default:
       throw `*ID Pesanan* yang dipilih tidak tersedia, Silahkan pilih *ID Pesanan* di bawah ini.
       
-*— YULA JOIN GROUP*
+*— KIMIE SEWA GROUP*
 
 *7 Day join the group*
 - Harga: Rp. 7.000 IDR
@@ -86,7 +86,7 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
 *Example:* ${usedPrefix + command} 30day
 `;
   };
-    let maximus = `*Ｋ Λ Ｒ Λ  O R D E R*\n\n*• Status:* _🟡 Pending_\n*• ID Pembelian:* ${text}\n*• Nominal:* ${orderID}\n*• Payment:* QRIS\n\n\n*TAHAP-TAHAP Pembayaran*\n*1.* Silahkan SCAN QRIS ini dengan M-Banking/E-Wallet kamu\n*2.* Masukan Nominal: ${orderID}\n*3.* Silahkan Kirim bukti pembayaran ke nomor ini wa.me/${global.info.nomorown}`
+    let maximus = `*CARA ORDER*\n\n*• Status:* _🟡 Pending_\n*• ID Pembelian:* ${text}\n*• Nominal:* ${orderID}\n*• Payment:* QRIS/DANA : 0887-1467-543\n\n\n*TAHAP-TAHAP Pembayaran*\n*1.* Silahkan SCAN QRIS ini dengan M-Banking/E-Wallet kamu\n*2.* Masukan Nominal: ${orderID}\n*3.* Silahkan Kirim bukti pembayaran ke nomor ini ${global.info.nomorown}`
     conn.sendFile(m.sender, global.qris, 'maxim.jpg', maximus, m)
     conn.reply(m.chat, '✔️ *PESANANMU TELAH DI BUAT*\n\nSaya telah mengirim pembayarannya melalu private chat silahkan di baca dan ikuti tahap-tahap pembayaran. Terimakasih', m)
     conn.reply(global.info.nomorown + '@s.whatsapp.net', `@${m.sender.split('@')[0]} Sedang dalam pembayaran nominal ${orderID}`, m, { contextInfo: { mentionedJid: [m.sender] }})
