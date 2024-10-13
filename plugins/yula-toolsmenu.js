@@ -21,7 +21,7 @@ const defaultMenu = {
   header: '*┌ •「 %category  」*',
   body: '*│ •* %cmd',
   footer: '*└* ',
-  after: 'ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴅɪꜱᴄᴜꜱꜱɪᴏɴ',
+  after: '',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
@@ -31,7 +31,7 @@ let tags = {
   try {
   	// DEFAULT MENU
       let dash = global.dashmenu
-  	let m1 = global.dmenut
+  	  let m1 = global.dmenut
       let m2 = global.dmenub
       let m3 = global.dmenuf
       let m4 = global.dmenub2
@@ -192,10 +192,10 @@ conn.sendMessage(m.chat, {
                    newsletterName: global.info.namechannel,
                    },
                    externalAdReply: {
-                   title: global.info.namebot + `© 2024`,
-                   body: 'Powered By Maximus',
+                   title: global.info.namebot`,
+                   body: 'Powered By Pendosa',
                    thumbnailUrl: global.maximus ? global.maximus : thum,
-                   sourceUrl: pickRandom(["https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8","https://chat.whatsapp.com/EWxOwlaJXTsIhj706JsfmZ"]),
+                   sourceUrl: '',
                    mediaType: 1,
                    renderLargerThumbnail: true
                    },
