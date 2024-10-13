@@ -23,7 +23,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
 
 handler.help = ['hidetag'].map(v => v + ' <teks>')
 handler.tags = ['adminry']
-handler.command = /^(hidetag|ht)$/i
+handler.command = /^(hidetag|ht|h)$/i
 
 handler.admin = true
 handler.botAdmin = true
