@@ -11,7 +11,7 @@ text: tio,
 contextInfo: {
 externalAdReply: {
 title: "",
-body: 'Assisten YuLa💕 By Maximus',
+body: 'kimiebot - md assisten',
 thumbnailUrl: "https://telegra.ph/file/3130db5629b33918b2f90.jpg",
 sourceUrl: "",
 mediaType: 1,
