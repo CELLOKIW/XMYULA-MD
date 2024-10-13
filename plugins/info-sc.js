@@ -4,11 +4,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	try {
    let xm4ze = await( await fetch(xmenus)).json()
    let thum = xm4ze[Math.floor(Math.random() * xm4ze.length)]
-   let maximus = `*XMYULA-MD BY XM4ZE*
-
-> https://github.com/XM4ZE/XMYULA-MD
-
-_Don't forget to give me 5 Stars 🙂_`
+   let maximus = `*KIMIEBOT - MD*
+> BOT PRIVAT SC
+> TIDAK DI JUAL
+> KHUSUS SEWA AJAH
+`
 		conn.sendMessage(m.chat, {
             text: maximus,
             contextInfo: {
@@ -20,10 +20,10 @@ _Don't forget to give me 5 Stars 🙂_`
                    newsletterName: global.info.namechannel,
                    },
                    externalAdReply: {
-                   title: global.info.namebot + `© 2024`,
-                   body: 'Powered By Maximus',
+                   title: global.info.namebot,
+                   body: 'Powered By Pendosa',
                    thumbnailUrl: thum,
-                   sourceUrl: 'https://github.com/XM4ZE/XMYULA-MD',
+                   sourceUrl: 'https://github.com/',
                    mediaType: 1,
                    renderLargerThumbnail: true
                    },
